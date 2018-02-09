@@ -1,0 +1,33 @@
+<div class='container'>
+  <div class="col-md-offset-2 col-md-8 col-sm-12">
+    <h1>Chat App</h1>
+    <div class="panel panel-default">
+      <div class="panel-heading clearfix">
+        <button id="changeName" type="button" class="btn btn-default">Change Name</button>
+        <button id="chatConnect" type="button" class="btn btn-success" style="display:none;">Connect</button>
+        <button id="chatDisconnect" type="button" class="btn btn-danger">Disconnect</button>
+        <div class="dropdown pull-right">
+          <button class="btn btn-link dropdown-toggle" type="button" id="chatUsers" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="userCount"></span> Users
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="chatUsers" id="usersList">
+          </ul>
+        </div>
+      </div>
+      <div class="panel-body" id="chatWindow">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container' id="chatBar">
+  <div class="col-md-offset-2 col-md-8 col-sm-12">
+    <p id="userTyping">Someone is typing...</p>
+    <form class="input-group" id="chatInputForm">
+      <input id="chatMessage" type="text" class="form-control" placeholder="Start chatting..." autocomplete="off">
+      <span class="input-group-btn">
+        <button id="chatButton" class="btn btn-primary disabled" disabled="disabled" type="submit">Send!</button>
+      </span>
+    </form>
+</div>

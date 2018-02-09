@@ -1,0 +1,38 @@
+#chatWindow {
+  height: 450px;
+  overflow: scroll;
+  position: relative;
+}
+#userTyping {
+  opacity: 0;
+}
+@media (max-width: 978px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+    /*#chatBar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }*/
+    #chatBar > div {
+      padding: 0;
+    }
+    #chatButton {
+      border-radius: 0;
+    }
+    #chatMessage {
+      border-radius: 0;
+    }
+}
